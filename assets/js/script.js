@@ -95,7 +95,7 @@ if($('#ensigna-preloader').length > 0) {
                 while( s.length < len ) s = c+ s;
 
                 $('.ensigna').addClass('ensigna-ensigna_' + s);
-                $('.ensigna span').text((Math.ceil(progressNow * 100)) * 100);
+                $('.ensigna span').text((Math.floor(progressNow * 100)));
             }
 
             if(progressNow >= 1){
