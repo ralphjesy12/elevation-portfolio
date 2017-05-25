@@ -10,7 +10,7 @@ if($('#ensigna-preloader').length > 0) {
 
     var progress = 0;
     var progressNow = 0;
-    var totalFrames = 30;
+    var totalFrames = 45;
     var frameNow = 0;
     var interval = null;
     function setPreloaderClass(progress,progressNow){
@@ -29,20 +29,66 @@ if($('#ensigna-preloader').length > 0) {
 
         $('.ensigna').addClass('ensigna-ensigna_' + s);
     }
-    $.preload([
-        assets + '/assets/img/background-8.jpg',
-        assets + '/assets/img/background-9.jpg',
-        assets + '/assets/img/Headline.png',
-        assets + '/assets/img/ensigna.png',
-        assets + '/assets/js/fullPage.js/jquery.fullpage.min.js',
-        assets + '/assets/js/fullPage.js/jquery.fullpage.extensions.min.js',
-        assets + '/assets/js/jquery.preload.min.js',
-        assets + '/assets/js/main.js',
-        'http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js',
+    $.preload([assets + "/assets/css/main.css"
+    ,assets + "/assets/css/styles.css"
+    ,assets + "/assets/favicon/android-icon-192x192.png"
+    ,assets + "/assets/favicon/favicon-16x16.png"
+    ,assets + "/assets/favicon/favicon-32x32.png"
+    ,assets + "/assets/favicon/favicon-96x96.png"
+    ,assets + "/assets/fonts/JaapokkiRegular/JaapokkiRegular.woff"
+    ,assets + "/assets/fonts/ProximaNova-Regular/hinted-ProximaNova-Regular.woff2"
+    ,assets + "/assets/img/background-8.jpg"
+    ,assets + "/assets/img/background-9.jpg"
+    ,assets + "/assets/img/code/001-coding-program.png"
+    ,assets + "/assets/img/code/002-cloud.png"
+    ,assets + "/assets/img/code/003-server.png"
+    ,assets + "/assets/img/code/004-web-1.png"
+    ,assets + "/assets/img/code/005-web.png"
+    ,assets + "/assets/img/code/006-social.png"
+    ,assets + "/assets/img/code/007-html-5-logo.png"
+    ,assets + "/assets/img/code/008-js-file.png"
+    ,assets + "/assets/img/code/009-interface.png"
+    ,assets + "/assets/img/code/010-php-programming-language.png"
+    ,assets + "/assets/img/code/011-css-file.png"
+    ,assets + "/assets/img/ensigna.png"
+    ,assets + "/assets/img/Headline.png"
+    ,assets + "/assets/img/me-lookup.png"
+    ,assets + "/assets/img/wizards/wizard-00001.gif"
+    ,assets + "/assets/img/wizards/wizard-00005.gif"
+    ,assets + "/assets/img/wizards/wizard-00006.gif"
+    ,assets + "/assets/img/wizards/wizard-00007.gif"
+    ,assets + "/assets/img/wizards/wizard-00008.gif"
+    ,assets + "/assets/img/wizards/wizard-00009.gif"
+    ,assets + "/assets/img/wizards/wizard-00011.gif"
+    ,assets + "/assets/js/fullPage.js/jquery.fullpage.extensions.min.js"
+    ,assets + "/assets/js/fullPage.js/jquery.fullpage.min.css"
+    ,assets + "/assets/js/fullPage.js/jquery.fullpage.min.js"
+    ,assets + "/assets/js/jquery.parallax.js"
+    ,assets + "/assets/js/jquery.preload.min.js"
+    ,assets + "/assets/js/main.js"
+    ,assets + "/assets/js/script.js"
+    ,themeassets + "/assets/css/essentials.css"
+    ,themeassets + "/assets/css/header-1.css"
+    ,themeassets + "/assets/css/layout.css"
+    ,themeassets + "/assets/fonts/font-icons.woff"
+    ,themeassets + "/assets/fonts/fontawesome-webfont.woff2?v=4.7.0"
+    ,themeassets + "/assets/js/contact.js"
+    ,themeassets + "/assets/js/scripts.js"
+    ,themeassets + "/assets/js/view/demo.revolution_slider.js"
+    ,themeassets + "/assets/plugins/bootstrap/css/bootstrap.min.css"
+    ,themeassets + "/assets/plugins/bootstrap/js/bootstrap.min.js"
+    ,themeassets + "/assets/plugins/owl-carousel/owl.carousel.min.js"
+    ,themeassets + "/assets/plugins/slider.layerslider/css/layerslider.css"
+    ,themeassets + "/assets/plugins/slider.revolution/css/extralayers.css"
+    ,themeassets + "/assets/plugins/slider.revolution/css/settings.css"
+    ,themeassets + "/assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"
+    ,themeassets + "/assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"
+    ,themeassets + "/assets/plugins/slider.swiper/dist/css/swiper.min.css"
+    ,themeassets + "/assets/plugins/smoothscroll.js"
     ]).then(function() {
-        progressNow = 0.5;
+        progressNow = 0.75;
         progress = 1;
-        totalFrames = 60;
+        totalFrames = 15;
         clearInterval(interval);
         interval = setInterval(function(){
             if(progress != progressNow){

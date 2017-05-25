@@ -107,6 +107,7 @@ global $_footers;
 echo $_footers;
 ?>
 <script>var assets = "<?=get_stylesheet_directory_uri();?>";</script>
+<script>var themeassets = "<?=get_template_directory_uri();?>";</script>
 <script type="text/javascript" src="<?=get_template_directory_uri();?>/assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="<?=get_template_directory_uri();?>/assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
 <script type="text/javascript" src="<?=get_template_directory_uri();?>/assets/js/view/demo.revolution_slider.js"></script>
