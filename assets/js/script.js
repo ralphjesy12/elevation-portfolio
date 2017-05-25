@@ -30,11 +30,15 @@ if($('#ensigna-preloader').length > 0) {
         $('.ensigna').addClass('ensigna-ensigna_' + s);
     }
     $.preload([
-        assets + '/assets/img/background.jpg',
+        assets + '/assets/img/background-8.jpg',
+        assets + '/assets/img/background-9.jpg',
+        assets + '/assets/img/Headline.png',
+        assets + '/assets/img/ensigna.png',
         assets + '/assets/js/fullPage.js/jquery.fullpage.min.js',
         assets + '/assets/js/fullPage.js/jquery.fullpage.extensions.min.js',
         assets + '/assets/js/jquery.preload.min.js',
         assets + '/assets/js/main.js',
+        'http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js',
     ]).then(function() {
         progressNow = 0.5;
         progress = 1;
