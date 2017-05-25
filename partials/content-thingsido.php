@@ -10,7 +10,7 @@
                 </h2>
 
                 <h3 class="size-25 desc">
-                    I've been building websites and apps more than five years now. Yeah, I'm still a rookie. That's for sure. But I am proud to say that I am good at what I do and I love what I do best.
+                    I've been building websites and apps more than five years now. Yeah, I'm still a rookie. That's for sure. But I'm proud to say that I'm good at what I do and I love what I do best.
                 </h3>
                 <div class="text-center">
                     <div class="owl-carousel nomargin" data-plugin-options='{"singleItem": false, "autoPlay": true}'>
