@@ -28,6 +28,8 @@
     width: 500px;
     height: 280px;
 
+
+
     &.ensigna-ensigna_00000 {
         .stitches-ensigna(-5px, -5px, 500px, 280px);
     }
@@ -281,6 +283,7 @@
             content : '%';
         }
     }
+
 }
 
 
@@ -302,17 +305,50 @@
         width: 800px;
         height: 580px;
         margin: auto;
+
+        @media screen and (max-width: 767px){
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
 #particles-js {
     position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-  display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: block;
+    canvas{
+        width: 100vw!important;
+        height: 100vh!important;
+    }
 }
 
 .scroll-down{
     z-index: 1000!important;
+}
+
+
+#mobile-caution{
+    display: none;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 10%;
+    font-size: 24px;
+    background-size: cover;
+    background-position: bottom center;
+    @media screen and (max-width: 480px)
+
+    {
+        display: block;
+    }
 }

@@ -28,6 +28,14 @@
         <span>0</span>
     </div>
 </div>
+
+<div id="mobile-caution" class="font-jaapokki-reg" style="background-image:url(<?=get_stylesheet_directory_uri()?>/assets/img/background-9.jpg)">
+Hey, I am Ralph John Galindo.
+And I'm a Web Developer.
+<br>
+<br>
+<small>I hope you don't mind opening this page on a desktop. Rest assured, you'll experience a better view. See ya!</small>
+</div>
 <!-- SCROLL TO TOP -->
 <a href="#" id="toTop"></a>
 <?php
