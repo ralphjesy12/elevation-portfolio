@@ -34,4 +34,9 @@
         get_template_part('partials/content','hiremeif');
         ?>
     </section>
+    <section id="wannaknowmore" class="nopadding section-snap" data-anchor="wannaknowmore">
+        <?php
+        get_template_part('partials/content','wannaknowmore');
+        ?>
+    </section>
 </div>

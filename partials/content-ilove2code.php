@@ -12,7 +12,7 @@
                     out of nowhere. That’s what I feel like when I build websites. Sounds fun right?
                 </h3>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 hidden-xs">
                 <img src="<?=get_stylesheet_directory_uri()?>/assets/img/wizards/wizard-00005.gif" class="img-responsive">
             </div>
         </div>

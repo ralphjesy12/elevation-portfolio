@@ -15,7 +15,7 @@
                     Poetry aside, one thing I can assure you is - I love what I do.
                 </h3>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 hidden-xs">
                 <img src="<?=get_stylesheet_directory_uri()?>/assets/img/wizards/wizard-00008.gif" class="img-responsive">
             </div>
         </div>

@@ -10,7 +10,7 @@
                     Back in college, I dreamt of building an app that helps people. I named it &quot;Project Eve&quot;, ( derived from a character in Wall-E ) . The aim of this project is to build an app the teaches people protect mankind. An app that gives any age the wisdom to conserve nature and reduce the most pressing threats to the diversity of life on Earth. It's still a work in progress, but you might wanna check it out <a href="https://github.com/ralphjesy12/ProjectEve" target="_blank">here</a>.
                 </h3>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 hidden-xs">
                 <img src="<?=get_stylesheet_directory_uri()?>/assets/img/wizards/wizard-00009.gif" class="img-responsive">
             </div>
         </div>

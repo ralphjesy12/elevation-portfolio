@@ -1,7 +1,7 @@
 <section class="parallax parallax-2 padding-top-150" style="">
     <div class="container text-left">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 hidden-xs">
                 <img src="<?=get_stylesheet_directory_uri()?>/assets/img/wizards/wizard-00007.gif" class="img-responsive">
             </div>
             <div class="col-sm-8">

@@ -67,4 +67,4 @@ echo $post->post_type . '-' . $post->post_name;
 ?>">
     <!-- wrapper -->
     <div id="wrapper">
-        <?php include 'partials/content-header.php';
+        <?php // include 'partials/content-header.php';
