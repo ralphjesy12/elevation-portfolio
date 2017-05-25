@@ -28,7 +28,6 @@
         <span>0</span>
     </div>
 </div>
-
 <!-- SCROLL TO TOP -->
 <a href="#" id="toTop"></a>
 <?php
@@ -47,6 +46,7 @@ echo $_footers;
 <script src="https://use.fontawesome.com/ff24225d4b.js"></script>
 <script type="text/javascript" src="<?=get_stylesheet_directory_uri();?>/assets/js/jquery.preload.min.js"></script>
 <script type="text/javascript" src="<?=get_stylesheet_directory_uri();?>/assets/js/main.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script type="text/javascript" src="<?=get_stylesheet_directory_uri();?>/assets/js/script.js"></script>
 <?php if(!is_user_logged_in()): ?>
     <script>
