@@ -10,7 +10,7 @@ if($('#ensigna-preloader').length > 0) {
 
     var progress = 0;
     var progressNow = 0;
-    var totalFrames = 45;
+    var totalFrames = 60;
     var frameNow = 0;
     var interval = null;
     function setPreloaderClass(progress,progressNow){
@@ -86,9 +86,7 @@ if($('#ensigna-preloader').length > 0) {
     ,themeassets + "/assets/plugins/slider.swiper/dist/css/swiper.min.css"
     ,themeassets + "/assets/plugins/smoothscroll.js"
     ]).then(function() {
-        progressNow = 0.75;
         progress = 1;
-        totalFrames = 15;
         clearInterval(interval);
         interval = setInterval(function(){
             if(progress != progressNow){

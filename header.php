@@ -38,6 +38,17 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?=get_stylesheet_directory_uri()?>/assets/faviconms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-99895023-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
 </head>
 
 <!--
@@ -61,10 +72,10 @@ data-background="assets/images/boxed_background/1.jpg"
 <?php
 global $post;
 if(is_home()):
-    echo " page-home ";
+echo " page-home ";
 endif;
 echo $post->post_type . '-' . $post->post_name;
 ?>">
-    <!-- wrapper -->
-    <div id="wrapper">
-        <?php // include 'partials/content-header.php';
+<!-- wrapper -->
+<div id="wrapper">
+    <?php // include 'partials/content-header.php';

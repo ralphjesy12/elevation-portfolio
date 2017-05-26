@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-sm-8">
                 <h2 class="font-jaapokki-reg margin-bottom-10 text-uppercase title">
-                    I love to code
+                    I love to code. Really.
                 </h2>
 
                 <h3 class="size-25 desc">
