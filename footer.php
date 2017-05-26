@@ -25,7 +25,7 @@
                     </a>
 
 
-                    <a href="mailto:ralphjesy@gmail.com" class="social-icon social-icon-dark social-email3" data-toggle="tooltip" data-placement="top" title="" data-original-title="Email" target="_blank">
+                    <a href="mailto:ask.ralphjohngalindo@gmail.com" class="social-icon social-icon-dark social-email3" data-toggle="tooltip" data-placement="top" title="" data-original-title="Email" target="_blank">
                         <i class="icon-email3"></i>
                         <i class="icon-email3"></i>
                     </a>

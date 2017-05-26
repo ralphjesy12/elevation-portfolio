@@ -10,7 +10,7 @@
                 </h2>
 
                 <h3 class="size-25 desc">
-                    I&apos;m <b>Ralph John Galindo</b>, a self-proclaimed Web Artisan from Imus, Philippines living in Makati, where I work as a Developer in a Media Publications Company. With a background in programming, my strength lies in building apps and websites.
+                    I&apos;m <b>Ralph John Galindo</b>, a self-proclaimed Web Artisan from Imus, Philippines living in Manila, where I work as a Developer in a Media Publications Company. With a background in programming, my strength lies in building apps and websites.
                 </h3>
             </div>
         </div>
