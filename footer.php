@@ -93,11 +93,13 @@
     <small>I hope you don't mind opening this page on a desktop. Rest assured, you'll experience a better view. </small>See ya!
 </div>
 
+<?php if(is_home()):?>
 <div id="ensigna-preloader" >
     <div class="ensigna">
         <span>0</span>
     </div>
 </div>
+<?php endif; ?>
 
 <!-- SCROLL TO TOP -->
 <a href="#" id="toTop"></a>
