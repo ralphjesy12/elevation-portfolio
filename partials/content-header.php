@@ -22,7 +22,7 @@ shadow-after-3 	= shadow 3 header bottom
 Example Usage:  class="clearfix sticky header-sm transparent noborder"
 -->
 
-<div id="header"  class="hidden sticky clearfix "
+<div id="header"  class="sticky clearfix shadow-after-3"
  <?php
  // if(is_home()):
  //    class="bottom sticky clearfix "
@@ -45,9 +45,9 @@ Example Usage:  class="clearfix sticky header-sm transparent noborder"
 
         </ul>
         <!-- Logo -->
-        <a class="logo pull-left purple" href="<?=site_url()?>">
-            <!-- <img src="<?=get_stylesheet_directory_uri()?>/assets/img/galaxy-crop.png" alt="" /> -->
-            <label class="font-jaapokki-sub">IMAGINATION<span>Beyond the limit</span></label>
+        <a class="logo pull-left orange" href="<?=site_url()?>">
+            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/me-lookup.png" alt="" />
+            <label class="font-jaapokki-sub">RALPHJOHN<span>A Dreamer &middot; An Achiever &middot; A Goal Keeper</span></label>
         </a>
         <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
             <nav class="nav-main">
@@ -70,7 +70,7 @@ Example Usage:  class="clearfix sticky header-sm transparent noborder"
 </header>
 </div>
 <?php if(!is_home() && !(is_page('services'))): ?>
-    <section class="page-header page-header-lg parallax parallax-3" style="background-image: url('<?=get_template_directory_uri()?>/assets/images/demo/vision-min.jpg'); background-position: 50% 31px;background-size:cover;background-position:top;   margin-top: 67px; ">
+    <section class="page-header page-header-lg parallax parallax-3" style="background-image: url('<?=get_stylesheet_directory_uri()?>/assets/img/background-6.jpg'); background-position: 50% 31px;background-size:cover;background-position:top;">
         <div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
 
         <div class="container">
@@ -81,9 +81,9 @@ Example Usage:  class="clearfix sticky header-sm transparent noborder"
                 <?php
             else:
                 ?>
-                <h1 class=uppercase><?=the_title();?></h1>
+                <h1 class="uppercase font-jaapokki-reg"><?=the_title();?></h1>
                 <!-- breadcrumbs -->
-                <ol class="breadcrumb">
+                <ol class="breadcrumb uppercase">
                     <li><a href="<?=site_url();?>">Home</a></li>
                     <li class="active"><?=the_title();?></li>
                 </ol><!-- /breadcrumbs -->
