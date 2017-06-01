@@ -15,6 +15,7 @@
     <? wp_head();?>
     <link rel='stylesheet' id='fullpage-css' href='<?=get_stylesheet_directory_uri();?>/assets/js/fullPage.js/jquery.fullpage.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='main-css' href='<?=get_stylesheet_directory_uri();?>/assets/css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='main-css' href='<?=get_template_directory_uri();?>/assets/css/plugin-hover-buttons.css' type='text/css' media='all' />
     <link rel='stylesheet' id='main-css' href='<?=get_stylesheet_directory_uri();?>/assets/css/styles.css' type='text/css' media='all' />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:700" rel="stylesheet">
     <!-- REVOLUTION SLIDER -->

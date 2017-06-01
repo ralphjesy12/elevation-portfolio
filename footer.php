@@ -94,11 +94,11 @@
 </div>
 
 <?php if(is_home()):?>
-<div id="ensigna-preloader" >
-    <div class="ensigna">
-        <span>0</span>
+    <div id="ensigna-preloader" >
+        <div class="ensigna">
+            <span>0</span>
+        </div>
     </div>
-</div>
 <?php endif; ?>
 
 <!-- SCROLL TO TOP -->
@@ -134,5 +134,18 @@ echo $_footers;
     });
     </script>
 <?php endif;?>
+<?php
+if(is_single() && in_category('projects')):
+    $owner = get_post_meta(get_the_ID(),'repo_owner',true);
+    $repo = get_post_meta(get_the_ID(),'repo_name',true);
+
+    if($owner!== FALSE && $repo!== FALSE):
+        do_action('init_gitprojects_stats',[
+            'owner' => $owner,
+            'repo' => $repo
+        ]);
+    endif;
+endif;
+?>
 </body>
 </html>

@@ -382,7 +382,7 @@
     #topNav{
         a.logo{
 
-                height: 60px;
+            height: 60px;
             img{
                 height: 60px;
                 border: 0;
@@ -392,5 +392,28 @@
                 color: #b92d03;
             }
         }
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    > span{
+        color: #b92d03;
+    }
+}
+#thingsido{
+    .btn{
+        &:hover,&:active{
+            color: #fff!important;
+        }
+    }
+}
+.hvr-sweep-to-right{
+    border-radius: 4px;
+    &:hover,&:active{
+        color: #fff!important;
+    }
+    &:before{
+        background: #340329;
+        border-radius: 4px;
     }
 }

@@ -101,16 +101,80 @@ function get_my_gallery_content ( $attr ) {
                     <a class="image-hover" href="<?=(wp_get_attachment_image_src($id,'main-image')[0])?>">
                         <img src="<?=(wp_get_attachment_image_src($id,'full')[0])?>" alt="...">
                     </a>
-                <?php
-                break;
+                    <?php
+                    break;
+
+                }
 
             }
+            ?>
+        </div>
 
-        }
-        ?>
-    </div>
+        <?php
 
-    <?php
+        return ob_get_clean();
+    }
 
-    return ob_get_clean();
-}
+
+    // Adding Github Language Frequency on Projects
+    add_action( 'init_gitprojects_stats', function($args){
+        if(is_single() && in_category('projects')):
+            $owner = $args['owner'];
+            $repo = $args['repo'];
+            ?>
+            <script>
+            loadScript('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js', function() {
+
+                var serviceUri = 'https://api.github.com/repos/<?=$owner?>/<?=$repo?>/languages';
+                $.ajax({
+                    url: serviceUri,
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function (d) {
+
+                        var labels = [];
+                        var dataset = [];
+                        var bg = [];
+                        var colors = [
+                            '#f22400',
+                            '#e54800',
+                            '#d86d00',
+                            "#cc9100",
+                            "#bfb600",
+                            "#b2da00",
+                            "#a6ff00",
+                        ];
+
+                        if (d.hasOwnProperty('ApacheConf')) {
+                            delete d['ApacheConf'];
+                        }
+
+                        for (var lang in d) {
+                            if (d.hasOwnProperty(lang)) {
+                                labels.push(lang);
+                                colorhere = colors.shift();
+                                dataset.push(d[lang]);
+                                bg.push(colorhere);
+                                colors.push(colorhere);
+                            }
+                        }
+
+                        var chart = new Chart(document.getElementById("doughnutChartCanvas"),{
+                            type : "doughnut",
+                            data : {
+                                labels: labels,
+                                datasets:[{
+                                    label:"Language Statistics",
+                                    data:dataset,
+                                    backgroundColor: bg
+                                }]
+                            },
+                        });
+
+                    }
+                });
+            });
+            </script>
+            <?php
+        endif;
+    } ,11);

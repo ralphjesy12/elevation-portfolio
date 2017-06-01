@@ -22,54 +22,46 @@ shadow-after-3 	= shadow 3 header bottom
 Example Usage:  class="clearfix sticky header-sm transparent noborder"
 -->
 
-<div id="header"  class="sticky clearfix shadow-after-3"
- <?php
- // if(is_home()):
- //    class="bottom sticky clearfix "
- // else:
- //    class="static clearfix "
- // endif;
- ?>
->
-<!-- TOP NAV -->
-<header id="topNav">
-    <div class="container">
+<div id="header"  class="sticky clearfix shadow-after-3">
+    <!-- TOP NAV -->
+    <header id="topNav">
+        <div class="container">
 
-        <!-- Mobile Menu Button -->
-        <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-            <i class="fa fa-bars"></i>
-        </button>
+            <!-- Mobile Menu Button -->
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
 
-        <!-- BUTTONS -->
-        <ul class="pull-right nav nav-pills nav-second-main">
+            <!-- BUTTONS -->
+            <ul class="pull-right nav nav-pills nav-second-main">
 
-        </ul>
-        <!-- Logo -->
-        <a class="logo pull-left orange" href="<?=site_url()?>">
-            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/me-lookup.png" alt="" />
-            <label class="font-jaapokki-sub">RALPHJOHN<span>A Dreamer &middot; An Achiever &middot; A Goal Keeper</span></label>
-        </a>
-        <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
-            <nav class="nav-main">
+            </ul>
+            <!-- Logo -->
+            <a class="logo pull-left orange" href="<?=site_url()?>">
+                <img src="<?=get_stylesheet_directory_uri()?>/assets/img/me-lookup.png" alt="" />
+                <label class="font-jaapokki-sub">RALPHJOHN<span>A Dreamer &middot; An Achiever &middot; A Goal Keeper</span></label>
+            </a>
+            <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
+                <nav class="nav-main">
 
-                <?php
-                $_menu = wp_nav_menu(array(
-                    'menu' => 'Main menu',
-                    'walker' => new xyren_smarty_walker_nav_menu(),
-                    'menu_id'=>'topMain',
-                    'container' =>'ul',
-                    'menu_class' =>'nav nav-pills nav-main has-topBar',
-                    'echo' => false
-                ));
-                echo $_menu;
-                ?>
-            </nav>
+                    <?php
+                    $_menu = wp_nav_menu(array(
+                        'menu' => 'Main menu',
+                        'walker' => new xyren_smarty_walker_nav_menu(),
+                        'menu_id'=>'topMain',
+                        'container' =>'ul',
+                        'menu_class' =>'nav nav-pills nav-main has-topBar',
+                        'echo' => false
+                    ));
+                    echo $_menu;
+                    ?>
+                </nav>
+            </div>
+
         </div>
-
-    </div>
-</header>
+    </header>
 </div>
-<?php if(!is_home() && !(is_page('services'))): ?>
+<?php if(!is_home() && !is_archive()): ?>
     <section class="page-header page-header-lg parallax parallax-3" style="background-image: url('<?=get_stylesheet_directory_uri()?>/assets/img/background-6.jpg'); background-position: 50% 31px;background-size:cover;background-position:top;">
         <div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
 

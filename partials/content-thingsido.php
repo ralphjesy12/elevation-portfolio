@@ -49,7 +49,8 @@
                         </div>
                     </div>
                 </div>
-
+                <hr />
+                <a href="<?=site_url('projects')?>" class="btn text-uppercase btn-hvr hvr-sweep-to-right">Check out my projects</a>
             </div>
         </div>
     </div>
