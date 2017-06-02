@@ -178,3 +178,14 @@ function get_my_gallery_content ( $attr ) {
             <?php
         endif;
     } ,11);
+
+
+    add_action( 'pre_get_posts', 'projects_no_limit_page' );
+
+    function projects_no_limit_page( $query ) {
+
+        if( $query->is_main_query() && !is_admin() && is_category('projects') ) {
+            $query->set( 'posts_per_page', '-1' );
+        }
+
+    }
