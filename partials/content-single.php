@@ -39,7 +39,7 @@
 			$owner = get_post_meta(get_the_ID(),'repo_owner',true);
 			$repo = get_post_meta(get_the_ID(),'repo_name',true);
 			$site = get_post_meta(get_the_ID(),'repo_site',true);
-			if($owner!== FALSE && $repo!== FALSE):
+			if(!empty($owner) && !empty($repo)):
 				?>
 				<div class="heading-title heading-dotted text-right">
 					<h4 class="text-uppercase">Repository <span>Statistics</span></h4>

@@ -98,8 +98,8 @@ function get_my_gallery_content ( $attr ) {
                 case 'image/png':
                 case 'image/gif':
                     ?>
-                    <a class="image-hover" href="<?=(wp_get_attachment_image_src($id,'main-image')[0])?>">
-                        <img src="<?=(wp_get_attachment_image_src($id,'full')[0])?>" alt="...">
+                    <a class="image-hover" href="<?=(wp_get_attachment_image_src($id,'full')[0])?>">
+                        <img src="<?=(wp_get_attachment_image_src($id,'main-image')[0])?>" alt="...">
                     </a>
                     <?php
                     break;
